@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parking</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script type="module" src="./js/bundle.js"></script>
+</head>
+
+<body>
+    <audio style="display: none" id="music" preload="auto" loop>
+        <source src="./audio/aphex-twin-classics.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="dot-container">
+        <div class="dot" id="dot"></div>
+    </div>
+    <div class="interact__container" id="interact__container">
+        <p class="interact__text" id="interact__text">CLICK TO INTERACT</p>
+    </div>
+    <div class="blocker" id="blocker">
+        <div class="instructions" id="instructions">
+            <p class="instructions__title">CLICK TO PLAY</p>
+        </div>
+        <div class="keymapping">
+            <div class="keymapping__container">
+                <p class="keymapping__key">WASD</p>
+                <p class="keymapping__action">Move</p>
+            </div>
+            <div class="keymapping__container">
+                <p class="keymapping__key">MOUSE</p>
+                <p class="keymapping__action">Look</p>
+            </div>
+            <div class="keymapping__container">
+                <p class="keymapping__key">CLICK</p>
+                <p class="keymapping__action">Interact</p>
+            </div>
+        </div>
+    </div>
+    <div class="loader" id="loader">
+        <div class="loader__container">
+            <p class="loader__percent" id="loader__percent">0%</p>
+            <div class="loader__bar" id="loader__bar"></div>
+        </div>
+    </div>
+
+    <canvas id="canvas" style="width: 100%; height: 100%;"></canvas>
+</body>
+
+</html>
